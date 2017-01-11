@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="license-strip.css" />
+<style>
+body {
+  font-size: 14px;
+}
+/* it is useless For demonstration purposes only */
+.box {
+  height: 100px;
+  width: 80%;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+.box-black {
+  background-color: #000;
+}
+.sbox {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+/*it is use*/
+.license-container {
+  padding: 6px;
+  background-color: #888;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* if you need position bottom of container */
+.license-float {
+  position: relative;
+  height: 100%;
+}
+.license-float .license-container {
+  position: absolute;
+  bottom: 0;
+}
+/* if you need black background white font*/
+.license-inverse {
+  background-color: #000;
+  color: #fff;
+}
+/* if you need white background black font*/
+.license-default {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+</style>
+</head>
+  <body>
+    <div class="box">
+      <div class="license-container">
+        <p license-strip="badge">沪公网安备 31011002000891号</p>
+        <p license-strip>沪ICP备14049689号</p>
+      </div>
+    </div>
+    <div class="sbox">
+      <div class="license-container">
+        <p license-strip="badge">沪公网安备 31011002000891号</p>
+        <p license-strip>沪ICP备14049689号</p>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <div class="license-float">
+        <div class="license-container">
+          <p license-strip="badge">沪公网安备 31011002000891号</p>
+          <p license-strip>沪ICP备14049689号</p>
+        </div>
+      </div>
+    </div>
+    <div class="sbox">
+      <div class="license-float">
+        <div class="license-container">
+          <p license-strip="badge">沪公网安备 31011002000891号</p>
+          <p license-strip>沪ICP备14049689号</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <div class="license-container license-inverse">
+        <p license-strip="badge">沪公网安备 31011002000891号</p>
+        <p license-strip>沪ICP备14049689号</p>
+      </div>
+    </div>
+    <div class="sbox">
+      <div class="license-container license-inverse">
+        <p license-strip="badge">沪公网安备 31011002000891号</p>
+        <p license-strip>沪ICP备14049689号</p>
+      </div>
+    </div>
+
+    <div class="box box-black">
+      <div class="license-container license-default">
+        <p license-strip="badge">沪公网安备 31011002000891号</p>
+        <p license-strip>沪ICP备14049689号</p>
+      </div>
+    </div>
+    <div class="sbox box-black">
+      <div class="license-container license-default">
+        <p license-strip="badge">沪公网安备 31011002000891号</p>
+        <p license-strip>沪ICP备14049689号</p>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
+
+
+
+
